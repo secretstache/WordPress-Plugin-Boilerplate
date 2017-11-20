@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "A standardized, organized, object-oriented foundation for building high-quality WordPress Plugins.",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/secretstache/WordPress-Plugin-Boilerplate.git"
-  },
+  }
 }
