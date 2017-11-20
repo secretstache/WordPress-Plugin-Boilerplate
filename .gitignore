@@ -9,6 +9,7 @@
 *.vi
 *~
 *.sass-cache
+*.bundle.js
 
 # OS or Editor folders
 .DS_Store

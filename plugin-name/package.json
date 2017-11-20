@@ -1,12 +1,20 @@
 {
   "name": "wordpress-plugin-boilerplate",
   "version": "1.0.0",
-  "description": "A standardized, organized, object-oriented foundation for building high-quality WordPress Plugins.",
+  "description":
+    "A standardized, organized, object-oriented foundation for building high-quality WordPress Plugins.",
+  "scripts": {
+    "dev": "",
+    "test": "",
+    "build": "webpack"
+  },
   "dependencies": {},
   "devDependencies": {
+    "webpack": "^3.8.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/secretstache/WordPress-Plugin-Boilerplate.git"
+    "url":
+      "git+https://github.com/secretstache/WordPress-Plugin-Boilerplate.git"
   }
 }
