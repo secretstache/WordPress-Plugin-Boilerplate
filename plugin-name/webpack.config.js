@@ -1,12 +1,12 @@
 const path = require('path')
 
-const publicEntry = 'public/js/plugin-name-public'
-const adminEntry = 'admin/js/plugin-name-admin'
+const publicEntry = 'js/plugin-name-public'
+const adminEntry = 'js/plugin-name-admin'
 
 module.exports = {
   entry: {
-    [publicEntry]: `./${publicEntry}.js`,
-    [adminEntry]: `./${adminEntry}.js`
+    [`public/build/${publicEntry}`]: `./public/${publicEntry}.js`,
+    [`admin/build/${adminEntry}`]: `./admin/${adminEntry}.js`
   },
   output: {
     filename: '[name].bundle.js',

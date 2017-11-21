@@ -9,7 +9,6 @@
 *.vi
 *~
 *.sass-cache
-*.bundle.js
 
 # OS or Editor folders
 .DS_Store
@@ -39,3 +38,4 @@ intermediate
 .idea
 cache
 node_modules
+build
