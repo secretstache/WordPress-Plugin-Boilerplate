@@ -6,14 +6,15 @@
   "scripts": {
     "dev": "",
     "test": "",
-    "sass:admin": "node-sass admin/css -o admin/build/css",
-    "sass:public": "node-sass public/css -o public/build/css",
-    "sass": "run-p sass:admin sass:public",
-    "sass:watch": "run-p \"sass:admin -- --watch\" \"sass:public -- --watch\"",
+    "sass": "gulp sass",
+    "sass:watch": "gulp sass-watch",
     "build": "webpack"
   },
   "dependencies": {},
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.4.0",
+    "gulp-sass": "^3.1.0",
     "node-sass": "^4.7.2",
     "webpack": "^3.8.1"
   },
