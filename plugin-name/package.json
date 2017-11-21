@@ -6,10 +6,15 @@
   "scripts": {
     "dev": "",
     "test": "",
+    "sass:admin": "node-sass admin/css -o admin/build/css",
+    "sass:public": "node-sass public/css -o public/build/css",
+    "sass": "run-p sass:admin sass:public",
+    "sass:watch": "run-p \"sass:admin -- --watch\" \"sass:public -- --watch\"",
     "build": "webpack"
   },
   "dependencies": {},
   "devDependencies": {
+    "node-sass": "^4.7.2",
     "webpack": "^3.8.1"
   },
   "repository": {
