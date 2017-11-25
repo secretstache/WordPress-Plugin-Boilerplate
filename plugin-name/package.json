@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "A standardized, organized, object-oriented foundation for building high-quality WordPress Plugins.",
   "scripts": {
-    "dev": "",
+    "dev": "webpack --config config/webpack/development",
     "test": "",
     "sass": "gulp sass",
     "sass:watch": "gulp sass-watch",
-    "build": "npm run sass && webpack"
+    "build": "npm run sass && webpack --config config/webpack/production.js"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
@@ -24,7 +24,8 @@
     "gulp-sass": "^3.1.0",
     "node-sass": "^4.7.2",
     "uglifyjs-webpack-plugin": "^1.1.1",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "webpack-merge": "^4.1.1"
   },
   "repository": {
     "type": "git",

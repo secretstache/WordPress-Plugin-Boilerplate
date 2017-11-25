@@ -1,5 +1,4 @@
-const path = require('path')
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
+const paths = require('../paths')
 
 const publicEntry = 'js/index'
 const adminEntry = 'js/plugin-name-admin'
@@ -11,7 +10,7 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname)
+    path: paths.rootPath
   },
   module: {
     rules: [
@@ -26,6 +25,5 @@ module.exports = {
         }
       }
     ]
-  },
-  plugins: [new UglifyJSPlugin()]
+  }
 }
