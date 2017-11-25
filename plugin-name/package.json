@@ -1,26 +1,33 @@
 {
   "name": "wordpress-plugin-boilerplate",
   "version": "1.0.0",
-  "description":
-    "A standardized, organized, object-oriented foundation for building high-quality WordPress Plugins.",
+  "description": "A standardized, organized, object-oriented foundation for building high-quality WordPress Plugins.",
   "scripts": {
     "dev": "",
     "test": "",
     "sass": "gulp sass",
     "sass:watch": "gulp sass-watch",
-    "build": "webpack"
+    "build": "npm run sass && webpack"
   },
-  "dependencies": {},
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
+  },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
     "gulp": "^3.9.1",
     "gulp-cli": "^1.4.0",
     "gulp-sass": "^3.1.0",
     "node-sass": "^4.7.2",
+    "uglifyjs-webpack-plugin": "^1.1.1",
     "webpack": "^3.8.1"
   },
   "repository": {
     "type": "git",
-    "url":
-      "git+https://github.com/secretstache/WordPress-Plugin-Boilerplate.git"
+    "url": "git+https://github.com/secretstache/WordPress-Plugin-Boilerplate.git"
   }
 }
