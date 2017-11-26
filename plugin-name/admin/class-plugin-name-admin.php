@@ -96,8 +96,29 @@ class Plugin_Name_Admin {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/plugin-name-admin.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'build/js/bundle.js', array( ), $this->version, true );
 
+	}
+
+	/**
+   * Add admin menu
+	 *
+	 * @since    1.0.0
+	 * @access   public
+	 */
+	public function add_admin_menu() {
+		add_menu_page( $this->plugin_name, $this->plugin_name, 'administrator', 'plugin-name', array($this, 'add_admin_menu_cb'));
+	}
+
+	/**
+	 * Callback for add_admin_menu() function
+	 *
+	 * @since    1.0.0
+	 */
+	public function add_admin_menu_cb() {
+		?>
+			<div id="admin-app"></div>
+		<?php
 	}
 
 }

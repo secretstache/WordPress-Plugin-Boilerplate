@@ -1,7 +1,7 @@
 const paths = require('../paths')
 
 const publicEntry = 'js/index'
-const adminEntry = 'js/plugin-name-admin'
+const adminEntry = 'js/index'
 
 module.exports = {
   entry: {
